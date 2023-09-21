@@ -3,10 +3,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const OPENCAGE_API_KEY = config.OPENCAGE_API_KEY;
+//const OPENCAGE_API_KEY = config.OPENCAGE_API_KEY;
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-const opencage = require('opencage-api-client');
+//const opencage = require('opencage-api-client');
 
 const cors = require('cors');
 
