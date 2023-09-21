@@ -28,6 +28,10 @@ function getdate() {
   return currentDate;
 }
 
+app.get('*', (req, res) => {
+  res.redirect('/');
+});
+
 app.post('/send_form', (req, res) => {
   console.log('???');
 
