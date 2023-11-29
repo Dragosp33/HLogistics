@@ -29,7 +29,7 @@ function getdate() {
 }
 
 app.get('*', (req, res) => {
-  res.redirect('/');
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.post('/send_form', (req, res) => {

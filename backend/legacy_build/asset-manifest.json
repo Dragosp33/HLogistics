@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2f0348c9.css",
+    "main.js": "/static/js/main.a67278ad.js",
+    "static/media/AdobeStock_full_europe.jpeg": "/static/media/AdobeStock_full_europe.f8a7f5976ec9be4c3fc8.jpeg",
+    "static/media/second_small_about_photo.jpg": "/static/media/second_small_about_photo.a3b9bbecd58f311d49c6.jpg",
+    "static/media/logo_white_background.png": "/static/media/logo_white_background.69f5bd8a95ec8cf117e5.png",
+    "static/media/logo.png": "/static/media/logo.e8ab26864543ab42a57f.png",
+    "index.html": "/index.html",
+    "static/media/geo-alt-fill.svg": "/static/media/geo-alt-fill.d19c00beb95a74d43118adac2608f079.svg",
+    "main.2f0348c9.css.map": "/static/css/main.2f0348c9.css.map",
+    "main.a67278ad.js.map": "/static/js/main.a67278ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f0348c9.css",
+    "static/js/main.a67278ad.js"
+  ]
+}

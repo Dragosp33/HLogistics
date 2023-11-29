@@ -18,7 +18,16 @@ const About = ({ scrollspyref }) => {
         <div className='row' id='about-row'>
           {/* Photo on the left */}
           <div className='col-lg-6'>
-            <div data-aos='fade-up' data-aos-duration='1200' id='image-trigger'>
+            <div
+              data-aos='fade-down'
+              data-aos-duration='1200'
+              id='image-trigger'
+              data-aos-anchor='#root'
+              //data-aos-anchor-placement='top-bottom'
+              /* data-aos-mirror='true'
+               data-aos-offset='0'
+              data-aos-delay='0' */
+            >
               <div className='main-image' id='about-main-image'></div>
             </div>
           </div>

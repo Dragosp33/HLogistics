@@ -2,8 +2,20 @@ import ContactForm from './ContactForm';
 
 import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from 'leaflet';
+import icon from './geo-alt-fill.svg';
+
+import 'leaflet/dist/leaflet.css';
 
 const ContactPage = ({ scrollspyref }) => {
+  const customIcon = L.icon({
+    iconUrl: icon,
+    iconSize: [32, 32], // Adjust the size as needed
+    iconAnchor: [16, 32], // Adjust the anchor point as needed
+    popupAnchor: [0, -15],
+  });
+
   return (
     <section id='scrollspycontact' ref={scrollspyref}>
       <div className='container-fluid  pb-3 mb-5'>
@@ -77,14 +89,49 @@ const ContactPage = ({ scrollspyref }) => {
                   </ListGroup.Item>
                   <ListGroup.Item
                     as='li'
-                    className='d-flex justify-content-between align-items-start'
+                    className='d-flex justify-content-between align-items-start location-container'
                   >
                     <div className='ms-2 me-auto'>
                       <div className='fw-bold'>Location</div>
-                      Street, 123, Bals, Olt, Romania
+                      Street Nicolae Balcescu, 123, Bals, Olt, Romania
+                      <i className='bi bi-geo-alt-fill'></i>
                     </div>
+                    <div style={{ height: '300px', width: '100%' }}>
+                      <MapContainer
+                        center={[44.344336, 24.119345]}
+                        zoom={13}
+                        style={{ height: '100%', width: '100%' }}
+                      >
+                        <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
+                        <Marker
+                          position={[44.344336, 24.119345]}
+                          icon={customIcon}
+                        >
+                          <Popup>Street, 123, Bals, Olt, Romania</Popup>
+                        </Marker>
 
-                    <i className='bi bi-geo-alt-fill'></i>
+                        <a
+                          //href={`https://www.google.com/maps?q=${44.344336},${24.119345}`}
+                          href={`https://www.google.com/maps?q=44.344336,24.119345`}
+                          target='_blank'
+                          rel='noopener noreferrer'
+                          onClick={() => {
+                            window.location.href = `geo:0,0?q=44.344336,24.119345(${encodeURIComponent(
+                              'HLogistics Team'
+                            )})`;
+                          }}
+                          style={{
+                            position: 'absolute',
+                            bottom: '0',
+                            backgroundColor: 'black',
+                            color: 'white',
+                            zIndex: '999',
+                          }}
+                        >
+                          Open in Google Maps
+                        </a>
+                      </MapContainer>
+                    </div>
                   </ListGroup.Item>
                 </ListGroup>
               </div>

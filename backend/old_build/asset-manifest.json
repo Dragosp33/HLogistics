@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8afa6b30.css",
+    "main.js": "/static/js/main.04ed9f20.js",
+    "static/media/AdobeStock_full_europe.jpeg": "/static/media/AdobeStock_full_europe.f8a7f5976ec9be4c3fc8.jpeg",
+    "static/media/second_small_about_photo.jpg": "/static/media/second_small_about_photo.a3b9bbecd58f311d49c6.jpg",
+    "static/media/edgar-Ky9JHrdvb1o-unsplash (1).jpg": "/static/media/edgar-Ky9JHrdvb1o-unsplash (1).143cd39879cf4472ee1f.jpg",
+    "static/media/jan-kopriva-b6fns2kOFsk-unsplash.jpg": "/static/media/jan-kopriva-b6fns2kOFsk-unsplash.d53dc23cbd3ca2fe7dbb.jpg",
+    "static/media/jairph-P-w61wkh-PQ-unsplash.jpg": "/static/media/jairph-P-w61wkh-PQ-unsplash.1ad290aef94b9b963b0c.jpg",
+    "static/media/logo_white_background.png": "/static/media/logo_white_background.69f5bd8a95ec8cf117e5.png",
+    "static/media/logo.png": "/static/media/logo.e8ab26864543ab42a57f.png",
+    "index.html": "/index.html",
+    "static/media/geo-alt-fill.svg": "/static/media/geo-alt-fill.d19c00beb95a74d43118adac2608f079.svg",
+    "main.8afa6b30.css.map": "/static/css/main.8afa6b30.css.map",
+    "main.04ed9f20.js.map": "/static/js/main.04ed9f20.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8afa6b30.css",
+    "static/js/main.04ed9f20.js"
+  ]
+}

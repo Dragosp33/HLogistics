@@ -486,7 +486,7 @@ function ContactForm() {
 
             <div className='col mt-3 d-flex justify-content-center'>
               {' '}
-              <Button type='submit' className='px-5'>
+              <Button type='submit' className='px-5 submit-btn'>
                 Send your offer <i className='bi bi-send'></i>
               </Button>
             </div>

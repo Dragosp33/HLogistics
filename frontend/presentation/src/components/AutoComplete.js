@@ -23,7 +23,7 @@ const AutocompleteSearch = ({ autocompleteId }) => {
           `https://autocomplete.search.hereapi.com/v1/autocomplete?q=${inputText}&apiKey=${apiKey}&limit=10&lang=en&postalCodeMode=cityLookup&type=postalCode`
         )
         .then((response) => {
-          //       console.log('?', response.data.items[0]);
+          // console.log('?', response.data.items[0]);
           const results = response.data.items.map((item) => item.title);
           setSuggestions(results);
           setShowSuggestions(true);
